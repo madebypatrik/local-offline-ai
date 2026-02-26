@@ -30,47 +30,47 @@ Your conversations, code, and documents **never leave your machine.**
 ## What you need
 
 - A Mac (Apple Silicon or Intel)
-- [Homebrew](https://brew.sh) — a free tool for installing software on Mac
-- [VS Code](https://code.visualstudio.com) — free code editor (optional, for coding features)
-- ~5 GB of free disk space per AI model
+- About 5 GB of free disk space per AI model
 
 ---
 
-## Setup — step by step
+## Setup — 3 steps
 
-### 1. Install Homebrew (if you don't have it)
-Open **Terminal** and paste:
+### Step 1 — Install Ollama
+
+👉 [Download Ollama for Mac](https://ollama.com/download/mac)
+
+Open the downloaded file and drag **Ollama** into your Applications folder. Launch it — you'll see a llama icon appear in your menu bar. That means it's running.
+
+---
+
+### Step 2 — Download an AI model
+
+Open **Terminal** (press `Cmd + Space`, type `Terminal`, press Enter) and paste one of these:
+
+**For general chat, writing, and questions:**
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-### 2. Install Ollama
-```bash
-brew install ollama
-```
-
-### 3. Start the AI server
-```bash
-ollama serve
-```
-Keep this terminal window open — it runs the AI engine in the background.
-
-### 4. Download an AI model
-Open a **new** terminal window and run one of these:
-
-```bash
-# Great for coding
-ollama pull deepseek-coder:6.7b
-
-# Great for general chat, writing, and questions
 ollama pull llama3
 ```
 
-### 5. Start chatting
+**For coding help:**
+```bash
+ollama pull deepseek-coder:6.7b
+```
+
+Wait for it to finish downloading — this only happens once.
+
+---
+
+### Step 3 — Start chatting
+
 ```bash
 ollama run llama3
 ```
-Type your message and press Enter. Type `/bye` to exit.
+
+Type your message and press Enter. Type `/bye` when you're done.
+
+> **That's it.** Ollama runs silently in the background from now on. You don't need to do steps 1 or 2 again.
 
 ---
 
