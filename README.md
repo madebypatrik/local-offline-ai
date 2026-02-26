@@ -27,6 +27,18 @@ Your conversations, code, and documents **never leave your machine.**
 
 ---
 
+## Quick install
+
+Open **Terminal** (`Cmd + Space` → type `Terminal` → Enter) and paste:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/madebypatrik/local-offline-ai/main/install.sh | bash
+```
+
+That's it — installs Ollama, starts the server, and downloads your first AI model automatically.
+
+---
+
 ## What you need
 
 - A Mac (Apple Silicon or Intel)
